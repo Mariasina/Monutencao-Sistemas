@@ -16,14 +16,20 @@ function dados(){
         image.src = json[i].imagem;
         price.textContent = "Preço: R$" + json[i].preco;
         card.setAttribute('class', "card");
-        green.src
+        green.src = "bola_verde.png";
+        red.src = "bola_vermelha.png";
+
 
         card.appendChild(title);
         card.appendChild(image);		
         card.appendChild(price);	
 
         if(json[i].estoque == true){
-            card.appendChild(title);
+            card.appendChild(green);
+
+        }
+        else{
+            card.appendChild(red);
 
         }
         

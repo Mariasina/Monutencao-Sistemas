@@ -18,7 +18,7 @@
     "descricao": "Camiseta Cogumelos Fantasma",
     "imagem": "https://i.pinimg.com/736x/02/10/13/021013f166247eb038cf843a345a25d8.jpg",
     "preco": 48.50,
-    "estoque": true
+    "estoque": false
   },
   {
     "id": 3,
