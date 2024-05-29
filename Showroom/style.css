@@ -1,0 +1,47 @@
+* {
+    font-family: "Roboto", sans-serif;
+    background-color: #bbc9bb;
+}
+
+main {
+    padding: 50px;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    background-color: #efeeee;
+}
+
+p {
+    background-color: #efeeee;
+}
+
+#products{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+img {
+    width: 400px;
+    object-fit: cover;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    border: 1px;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: #acacac;
+    box-shadow: 5px;
+    color: #656565;
+    padding: 10px;
+    width: 25%;
+    align-items: center;
+    background-color: #efeeee;
+}

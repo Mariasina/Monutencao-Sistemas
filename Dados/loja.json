@@ -1,0 +1,45 @@
+[
+  {
+    "id": 1,
+    "descricao": "Camista Cogumelos",
+    "imagem": "https://i.pinimg.com/564x/6b/be/d0/6bbed076d512754ecdc1d779600121bf.jpg",
+    "preco": 45.00,
+    "estoque": true
+  },
+  {
+    "id": 2,
+    "descricao": "Camiseta Coraline",
+    "imagem": "https://i.pinimg.com/564x/f6/77/96/f6779684dc0ec7791219e6a880992d71.jpg",
+    "preco": 50.00,
+    "estoque": true
+  },
+  {
+    "id": 3,
+    "descricao": "Camiseta Cogumelos Fantasma",
+    "imagem": "https://i.pinimg.com/736x/02/10/13/021013f166247eb038cf843a345a25d8.jpg",
+    "preco": 48.50,
+    "estoque": true
+  },
+  {
+    "id": 3,
+    "descricao": "All Star Cogumelos",
+    "imagem": "https://i.pinimg.com/564x/11/b8/30/11b8304edb215b6d77e56c5ed1916ff0.jpg",
+    "preco": 120.0,
+    "estoque": true
+  },
+  {
+    "id": 3,
+    "descricao": "Cardigan Morangos",
+    "imagem": "https://i.pinimg.com/564x/95/6c/cb/956ccbf84a7fb8483a9added1f13a1a3.jpg",
+    "preco": 95.0,
+    "estoque": true
+  },
+  {
+    "id": 3,
+    "descricao": "Cardigan Sapo",
+    "imagem": "https://i.pinimg.com/564x/1a/f3/f2/1af3f2a82a4bd6f36e4fef9e7d9f23c9.jpg",
+    "preco": 105.0,
+    "estoque": true
+  }
+]
+
