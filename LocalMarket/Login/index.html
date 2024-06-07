@@ -8,11 +8,21 @@
     <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
   </head>
   <body>
+    <div class="modal">
+        <div class="content">
+          <div class="exit">
+            <img src="https://icones.pro/wp-content/uploads/2021/08/icone-x-noir.png" alt="Exit Modal" class="exit-img">
+          </div>
+          <h1 class="title">Usuário ou senha incorretos!</h1>
+        </div>
+    </div>
+
     <div class="container">
       <h1>Login</h1>
         <input type="text" placeholder="Insira seu nome" id="nome" />
         <div >
           <input type="password" placeholder="Insira sua senha" id="senha" >
+          <img src="https://cdn0.iconfinder.com/data/icons/ui-icons-pack/100/ui-icon-pack-14-512.png" id="view" class="view">
         </div>
         <button onclick="login()">Entrar</button>
       </div>
