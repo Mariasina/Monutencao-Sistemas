@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import { Card } from './components/Card'
+import { APICard } from './components/APICard'
 import produtos from './constants/produtos.json'
 import { api } from "./api/rmApi"
 import style from './App.module.css'
@@ -38,9 +39,11 @@ function App() {
           <h2>Showroom de produtos</h2>
             <div className={style.wrapCardShow}>
             {produtos.map((item) => {
+              var item_status;
+              item.status == true ? item_status = "🟢" : item_status = "🔴"
               return(
                 <div className={style.wrapCard}>
-                  <Card name={item.name} desc={item.desc} value={item.value} image={item.image} key={item.id}/>
+                  <Card name={item.name} desc={item.desc} value={item.value} image={item.image} key={item.id} text={item_status}/>
                 </div>
               )
              })}
@@ -58,7 +61,7 @@ function App() {
              return(
               <div key={item.id} className={style.wrapCard}>
                 <br></br>
-                <Card name={item.name} desc={item.species} value={item.gender} image={item.image} />
+                <APICard name={item.name} desc={item.species} value={item.gender} type={item.type} image={item.image} status={item.status} />
                 {/* <button onClick={() => {}}>Info</button> */}
               </div>
               

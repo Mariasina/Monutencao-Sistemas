@@ -17,16 +17,15 @@ document.addEventListener("DOMContentLoaded", function () {
       const produtosContainer =
         document.getElementById("produtos-container");
 
-      produtos.map((produto, index) => {
-        if(produto.estoque == false){
+      
+      produtos.forEach((produto, index) => {
+        if (produto.estoque == false) {
           const card = document.createElement("div");
           card.setAttribute('class', "card");
-          card.style.width = "18rem";
-          card.style.marginRight = "10px";
 
           const imagem = document.createElement("img");
           imagem.src = produto.imagem;
-          imagem.setAttribute('class',"card-img-top");
+          imagem.setAttribute('class', "product-img");
 
           const cardBody = document.createElement("div");
           cardBody.setAttribute('class', "card-body");
@@ -68,6 +67,22 @@ document.addEventListener("DOMContentLoaded", function () {
       let carrinho = JSON.parse(localStorage.getItem("carrinho")) || [];
       carrinho.push(produtoSelecionado);
       localStorage.setItem("carrinho", JSON.stringify(carrinho));
+
+      const modal = document.querySelector('.modal');
+      const actualStyle = modal.style.display;
+      const btn = document.querySelector('.exit-img');
+
+      if (actualStyle == 'block') {
+        modal.style.display = 'none';
+      }
+      else {
+        modal.style.display = 'block';
+        btn.addEventListener("click", function () {
+          modal.style.display = 'none';
+        });
+      }
+
     }
   );
+
 });

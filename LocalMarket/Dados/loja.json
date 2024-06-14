@@ -4,6 +4,7 @@
     "descricao": "Camista Cogumelos",
     "imagem": "../Dados/products/camiseta-cogumelo.jpg",
     "preco": 45.00,
+    "quantidade": 23,
     "estoque": false
   },
   {
@@ -11,6 +12,7 @@
     "descricao": "Camiseta Coraline",
     "imagem": "../Dados/products/camiseta-coraline.jpg",
     "preco": 50.00,
+    "quantidade": 21,
     "estoque": false
   },
   {
@@ -18,6 +20,7 @@
     "descricao": "Camiseta Cogumelos Fantasma",
     "imagem": "../Dados/products/camiseta-cogumelos-fantasma.jpg",
     "preco": 48.50,
+    "quantidade": 13,
     "estoque": false
   },
   {
@@ -25,6 +28,7 @@
     "descricao": "All Star Cogumelos",
     "imagem": "../Dados/products/allstar-cogumelos.jpg",
     "preco": 120.0,
+    "quantidade": 0,
     "estoque": true
   },
   {
@@ -32,6 +36,7 @@
     "descricao": "Cardigan Morangos",
     "imagem": "../Dados/products/cardigan-morangos.jpg",
     "preco": 95.0,
+    "quantidade": 12,
     "estoque": false
   },
   {
@@ -39,6 +44,7 @@
     "descricao": "Cardigan Sapo",
     "imagem": "../Dados/products/cardigan-sapo.jpg",
     "preco": 105.0,
+    "quantidade": 19,
     "estoque": false
   }
 ]

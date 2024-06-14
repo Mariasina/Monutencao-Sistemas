@@ -8,6 +8,7 @@ function dados(){
         var title = document.createElement("h2");
         var image = document.createElement("img");
         var price = document.createElement("p");
+        var quantity = document.createElement("p");
 
         var green = document.createElement("img");
         var red = document.createElement("img");
@@ -16,6 +17,7 @@ function dados(){
         image.src = json[i].imagem;
         image.setAttribute('class', "product-img");
         price.textContent = "Preço: R$" + json[i].preco;
+        quantity.textContent = "Quantidade: " + json[i].quantidade;
         card.setAttribute('class', "card");
         green.src = "bola_verde.png";
         green.setAttribute('class', "ball-img");
@@ -25,6 +27,7 @@ function dados(){
         card.appendChild(title);
         card.appendChild(image);		
         card.appendChild(price);	
+        card.appendChild(quantity);	
 
         if(json[i].estoque == false){
             card.appendChild(green);
