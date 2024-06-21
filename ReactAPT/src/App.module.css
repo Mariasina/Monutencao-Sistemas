@@ -46,3 +46,7 @@
   text-align: center;
   background-color: #cdcdcd;
 }
+.map{
+  justify-content: center;
+  align-items: center;
+}
