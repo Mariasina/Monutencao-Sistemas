@@ -8,7 +8,8 @@ import { MapContainer, TileLayer, Popup, Marker } from 'react-leaflet'
 import 'leaflet/dist/leaflet.css';
 import 'leaflet-defaulticon-compatibility/dist/leaflet-defaulticon-compatibility.css';
 import "leaflet-defaulticon-compatibility";
-import { LineChart, Line, CartesianGrid, XAxis, YAxis, Tooltip } from 'recharts';
+import React, { PureComponent } from 'react';
+import { LineChart, Line, CartesianGrid, XAxis, YAxis, Tooltip, BarChart, Bar, Cell } from 'recharts';
 
 function App() {
   const [show, setShow] = useState("")
@@ -18,12 +19,24 @@ function App() {
   const dataGraphics = [
     { name: 'Os Vingadores', uv: 1.518, pv: 2400, amt: 2400 },
     { name: 'O Rei Leão', uv: 1.662, pv: 2400, amt: 2400 },
-    { name: 'Jurrasic World: Mundo dos...', uv: 1.670, pv: 2400, amt: 2400 },
-    { name: 'Homem Aranha: Sem Volta...', uv: 1.832, pv: 2400, amt: 2400 },
-    { name: 'Vingadores: Guerra Infinita', uv: 2.048, pv: 2400, amt: 2400 },
+    { name: 'Jurrasic World: Mundo d...', uv: 1.670, pv: 2400, amt: 2400 },
+    { name: 'Homem Aranha: Sem V...', uv: 1.832, pv: 2400, amt: 2400 },
+    { name: 'Vingadores: Guerra In...', uv: 2.048, pv: 2400, amt: 2400 },
     { name: 'Star Wars: O Despertar...', uv: 2.069, pv: 2400, amt: 2400 },
     { name: 'Titanic', uv: 2.245, pv: 2400, amt: 2400 },
-    { name: 'Avatar: O Caminho da Água', uv: 2.247, pv: 2400, amt: 2400 },
+    { name: 'Avatar: O Caminho da Á...', uv: 2.247, pv: 2400, amt: 2400 },
+    { name: 'Vingadores: Ultimato', uv: 2.797, pv: 2400, amt: 2400 },
+    { name: 'Avatar', uv: 2.847, pv: 2400, amt: 2400 }];
+
+  const dataGraphicsBar = [
+    { name: 'Os Vingadores', uv: 1.518, pv: 2400, amt: 2400 },
+    { name: 'O Rei Leão', uv: 1.662, pv: 2400, amt: 2400 },
+    { name: 'Jurrasic World: Mundo d...', uv: 1.670, pv: 2400, amt: 2400 },
+    { name: 'Homem Aranha: Sem V...', uv: 1.832, pv: 2400, amt: 2400 },
+    { name: 'Vingadores: Guerra In...', uv: 2.048, pv: 2400, amt: 2400 },
+    { name: 'Star Wars: O Despertar...', uv: 2.069, pv: 2400, amt: 2400 },
+    { name: 'Titanic', uv: 2.245, pv: 2400, amt: 2400 },
+    { name: 'Avatar: O Caminho da Á...', uv: 2.247, pv: 2400, amt: 2400 },
     { name: 'Vingadores: Ultimato', uv: 2.797, pv: 2400, amt: 2400 },
     { name: 'Avatar', uv: 2.847, pv: 2400, amt: 2400 }];
 
@@ -124,7 +137,7 @@ function App() {
         {show === "graphics" &&
           <>
             <div>
-              <h3>Top 10 filmes com maior bilheteria (bilhões em dolares)</h3>
+              <h3>Top 10 filmes com maior bilheteria (em bilhões de dólares)</h3>
               <LineChart width={1800} height={500} data={dataGraphics}>
                 <Line type="monotone" dataKey="uv" stroke="#8884d8" />
                 <CartesianGrid stroke="#ccc" />
@@ -132,6 +145,9 @@ function App() {
                 <YAxis />
                 <Tooltip />
               </LineChart>
+            </div>
+            <div>
+              
             </div>
 
           </>
