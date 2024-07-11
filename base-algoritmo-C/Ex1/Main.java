@@ -58,5 +58,7 @@ class Main {
         total = lanche + bebida;
 
         System.out.printf("Total a pagar: R$%.2f", total);
+
+        scan.close();
     }
 }

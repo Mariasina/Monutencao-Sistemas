@@ -11,5 +11,19 @@ public class Main {
         String nome = scan.next();
 
         System.out.println("Informe o valor por litro de gasolina: ");
+        float preco_litro = scan.nextFloat();
+
+        System.out.println("Informe o valor de pagamento: ");
+        float valor_pgto = scan.nextFloat();
+
+        float res = calculo(preco_litro, valor_pgto);
+
+        System.out.printf("\n%s vai abastecer %.3f litros de gasolina.", nome, res);
+
+        scan.close();
+    }
+
+    static float calculo(float preco_litro, float valor_pgto){
+        return valor_pgto / preco_litro;
     }
 }
